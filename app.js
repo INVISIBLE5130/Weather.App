@@ -63,10 +63,10 @@ window.addEventListener("load",()=>{
     }
 
     function changeColor(temp){
-        document.getElementsByTagName('body')[0].style.background = temp > 0 ? "linear-gradient(rgb(255,153,0), rgb(255,72,0))" : "linear-gradient(rgb(47,150,163), rgb(48,62,143))";
+        document.getElementsByTagName('body')[0].style.background = temp > 32 ? "linear-gradient(rgb(255,153,0), rgb(255,72,0))" : "linear-gradient(rgb(47,150,163), rgb(48,62,143))";
     }
 
     function changeImg(temp) {
-        document.getElementsByClassName('img')[0].style.background = temp > 0 ? "url(summer.png)" : "url(snow.png)";
+        document.getElementsByClassName('img')[0].style.background = temp > 32 ? "url(summer.png)" : "url(snow.png)";
     }
 });
